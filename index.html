@@ -4,12 +4,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <title>menu-bar</title>
+        <title>CRA Books</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css"type="text/css" media="(max-width: 520px)" />
     </head>
     <body>
+        <!-- 全体背景 -->
+        <div class="all-cover">
+            <img src="./img/all_bg.jpg" alt="全体背景">
+        </div>
 
         <nav class="nav">
             <div class="nav_logo">
@@ -24,9 +31,9 @@
               <li class="y-01"><a href="#a01">概要</a></li>
               <li class="y-02"><a href="#a02">あらすじ</a></li>
               <li class="y-01"><a href="#a03">キャラ紹介</a></li>
-              <li class="y-02"><a href="#a04">その他</a></li>
-              <li class="y-01"><a href="#a05">試し読み</a></li>
-              <li class="blue"><a href="#a06">コメント欄</a></li>
+              <li class="y-02"><a href="#a04">ためしよみ</a></li>
+              <li class="y-01"><a href="#a05">みんなのコメント</a></li>
+              <li class="blue"><a href="#a06">おたのしみコーナー</a></li>
             </ul>
 
             <div class="sns">
@@ -48,17 +55,315 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
 
-
-        <section class="back">
-            <p></p>
-            <p></p>
-            <p></p>
+        <section>
+            <div class="main">
+                <img src="./img/key-visual.png" alt="">
+            </div>
         </section>
+
+        <!-- 概要 -->
+        <section id="a01" class="inline-wrapper">
+            <div class="cloud view">
+                <div class="txt-box">
+                    <div class="txt-wrapper">
+                        <h2 class="sec-tit">
+                            この絵本の魅力
+                        </h2>
+                        <h3>
+                            【ストーリーに込められた想い】
+                        </h3>
+                        <p>
+                            私たちは、"勇気とは、ちょっとしたきっかけや自分の行動次第で気付くもの"ということをテーマにこの絵本を書き上げました。<br>
+                            主人公のりゅーは、とっても恥ずかしがりやで人見知り。いつも心の中では、「一人は寂しい、友達が欲しい」、「でもなんて話かけたらいいか分からない…」という二つの思いがぶつかり合っています。<br>
+                            この絵本を通すことで、「人と関わりを持つきっかけ」を、「一歩を踏み出すための小さな種火」を、一人でも多くの子供たちに届けることが出来れば幸いです。
+                        </p>
+
+                        <h3>
+                            【世代を問わず愛されるキャラたち】
+                        </h3>
+                        <p>
+                            ここでのこだわりポイントは3つ!<br>
+                            ①性別を限定しないことで、誰でも感情移入しやすいこと<br>
+                            ②子供から親世代まで幅広く愛されている人気キャラクターを意識して、ゆるっと可愛い恐竜さんたち♪<br>
+                            彼らの丸みをおびたシンプルな姿は、子供たちのお絵描きにもうってつけ。読んで描いて、お楽しみください!<br>
+                            ③色覚に配慮しつつ鮮やかな色合いを用いることで、誰にとっても見やすいうえに、子供たちに好かれるよう明るく表現しました。
+                        </p>
+
+                        <h3>
+                            【誰もが等しく楽しめるために】
+                        </h3>
+                        <p>
+                            この絵本は、色覚(色を感じ見分ける力のこと)に配慮して制作しています。<br>
+                            というのも実は男性の5%、女性の0.2%が程度の違いはあれど、色を見分けることを苦手としていて、その多くが無自覚なんです。<br>
+                            なので私たちは色覚能力の差に関係なく楽しんでもらえるように、色使いに配慮した今作を作り上げました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- あらすじ -->
+        <section id="a02" class="inline-wrapper">
+            <div class="story">
+                <div class="txt-box">
+                    <div class="txt-wrapper">
+                        <h2 class="sec-tit">
+                            あらすじ
+                        </h2>
+                        <p>
+                            ‘’りゅー’’というとても恥ずかしがりやなきょうりゅうの子がいました。<br>
+                            その子はいつも一人ぼっち。
+                            ある時、”りゅー”の目の前でドロドロさんが危機に陥ってしまいます。<br>
+                            これは”りゅー”があることをきっかけに大きく一歩を踏み出す物語…。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スライド雲 -->
+        <div class="cloud-01">
+            <img src="./img/slide-cloud.svg" alt="">     
+        </div>
+
+        <!-- キャラ紹介 -->
+        <section id="a03" class="inline-wrapper">
+            <div class="introduce">
+                <div class="txt-box">
+                    <div class="cha-01">
+                        <h2 class="sec-tit">
+                            キャラクター紹介
+                        </h2>
+                        <div class="picture">
+                            <span class="left"></span>
+                            <img src="./img/Introduce-ryu.png" alt="">
+                            <span class="right"></span>
+                        </div>
+                        <div class="cha-txt txt-wrapper">
+                            <h3>
+                                りゅー
+                            </h3>
+                            <p>
+                                この物語の主人公。恥ずかしがりやでおはなしするのがにがて。でも、本当はたくさんおはなししたいと思っている
+                            </p>
+                        </div> 
+                    </div>
+
+                    <div class="cha-02">
+                        <h2 class="sec-tit">
+                            キャラクター紹介
+                        </h2>
+                        <div class="picture">
+                            <span class="left"></span>
+                            <img src="./img/Introduce-dorodoro.png" alt="">
+                            <span class="right"></span>
+                        </div>
+                        <div class="cha-txt txt-wrapper">
+                            <h3>
+                                ドロドロさん
+                            </h3>
+                            <p>
+                                りゅーが偶然出会ったさみしそうなひと。ドロドロに汚れているが…。
+                            </p>
+                        </div> 
+                    </div>
+
+                    <div class="cha-03">
+                        <h2 class="sec-tit">
+                            キャラクター紹介
+                        </h2>
+                        <div class="picture">
+                            <span class="left"></span>
+                            <img src="./img/yellow.jpg" alt="">
+                            <span class="right"></span>
+                        </div>
+                        <div class="cha-txt txt-wrapper">
+                            <h3>
+                                その他
+                            </h3>
+                            <p>
+                                りゅーが住むきょうりゅう町の住人達。りゅーを温かく見守っている。
+                            </p>
+                        </div> 
+                    </div>
+
+                    <div class="page">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スライド雲 -->
+        <div class="cloud-02">
+            <img src="./img/slide-cloud.svg" alt="">     
+        </div>
+
+        <section id="a04" class="inline-wrapper">
+            <div class="try">
+                <div class="txt-box">
+                    <h2 class="sec-tit">
+                        ためしよみ
+                    </h2>
+                    <img src="./img/grey.jpg" alt="表紙">
+
+                    <!-- 試し読みボタン -->
+                    <div class="try-btn">    
+                        <h3>ここをクリック</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="a05" class="inline-wrapper">
+            <div class="comment">
+                <div class="txt-box">
+                    <div class="txt-wrapper">
+                        <h2 class="sec-tit">
+                            みんなのコメント
+                        </h2>
+                        <p class="explain">
+                            ご感想などご自由にお書きください。投稿して頂いたコメントは順番に表示されます。ご了承のほどよろしくお願いします。
+                        </p>
+    
+                        <div class="every">
+                            <div class="com-txt-right white">
+                                <h3>
+                                    にぎりずしさん（仮名）
+                                </h3>
+                                <p class="hide-01">
+                                    何か一歩踏み出したい時に読み返したい本になりました。誰が読んでも勉強になる大事なことを再認識させてくれます。
+                                </p>
+                                <div class="wh-01"></div>
+                            </div>
+                            
+                            <div class="com-txt-left">
+                                <h3>
+                                    ぽんさん（仮名）
+                                </h3>
+                                <p class="hide-02">
+                                    日常では勇気について考えたりする機会はあまりありませんが、この本を読んで勇気は人を成長させてくれる大切な感情だと思い出させてくれました。
+                                </p>
+                                <div class="wh-02"></div>
+                            </div>
+        
+                            <div class="com-txt-right">
+                                <h3>
+                                    どらやきさん（仮名）
+                                </h3>
+                                <p class="hide-03">
+                                    勇気は誰の中にもあり、時に大きな変化を与えてくれるものだと改めて考えさせられました。いろん勇気の形があり様々な場面があると思いますが、もし自分に勇気が必要になったらこの本の力を借りたいと思います。
+                                </p>
+                                <div class="wh-03"></div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- 送信form -->
+                    <div class="contact">
+                        <h2>
+                            コメントする
+                        </h2>
+                        <div class="contact-form">
+                            <form action="#">
+                                <dl>
+                                    <dt class="label"><label for="message">コメントの内容</label></dt>
+                                    <dd><textarea style="border:none" name="your-message" class="message"></textarea></dd>
+
+                                    <dt class="label"><label for="name">おなまえ</label></dt>
+                                    <dd><input type="text" class="name" name="your-name"></dd>
+                                </dl>
+
+                                <div class="send-btn">
+                                    <p>送信</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+         <!-- スライド雲 -->
+         <div class="cloud-03">
+            <img src="./img/slide-cloud.svg" alt="">     
+        </div>
+
+        <section id="a06" class="inline-wrapper">
+            <div class="enjoy">
+                <div class="txt-box">
+                    <div class="txt-wrapper">
+                        <h2 class="sec-tit">
+                            まちがいさがし
+                        </h2>
+                        <p class="explain">
+                            上と下のイラストからちがうところを　　つさがそう！
+                        </p>
+                    </div>
+                   
+                    <img src="./img/grey.jpg" alt="">
+
+                    <img src="./img/grey.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="inline-wrapper">
+            <div class="wall">
+                <div class="txt-box">
+                    <h2 class="sec-tit">
+                        壁紙
+                    </h2>
+                    
+                    <img src="./img/grey.jpg" alt="">
+
+                    <p>
+                        壁紙をプレゼント！お好きなサイズをお選びください。
+                    </p>
+                    
+                    <div>
+                        <p>
+                            <a href="./img/grey.jpg" target="_blank" download="CRA_books-design.jpg">ダウンロードはこちら</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="foot-img">
+                <img class="l-img" src="./img/grey.jpg" alt="">
+                <img class="r-img" src="./img/yellow.jpg" alt="">
+            </div>
+
+            <p>2022 CRA BOOKS</p>
+
+            <!-- トップボタン -->
+            <div class="to-top">
+                <a class="fall" href="#">
+                    <img src="./img/grey.jpg" alt="落ちるりゅー(初期)">
+                </a>
+
+                <a class="fly" href="#">
+                    <img src="./img/red.jpg" alt="">
+                </a>
+
+                <a class="top-btn" href="#">
+                    <img src="./img/grey.jpg" alt="">
+                </a>
+            </div>
+        </footer>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
+
+
+
