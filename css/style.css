@@ -317,11 +317,18 @@ body {
 /* 各キャラページ */
 .cha-01 {
     display: block;
+    margin: auto;
 }
 .cha-02 {
-    display: none;
+    display: block;
+    margin: auto;
 }
 .cha-03 {
+    display: block;
+    margin: auto;
+}
+
+.cha-none {
     display: none;
 }
 
@@ -330,13 +337,16 @@ body {
     display: flex;
     justify-content: center;
 }
-.page span {
+.page a {
     width: 17px;
     height: 17px;
     border-radius: 50%;
     text-align: center;
     background-color: #C1C0C0;
     margin: 0 30px 0 30px ;
+}
+.page .black{ 
+    background-color: #1f1f1f;
 }
 
 /* 試し読み */
@@ -596,6 +606,7 @@ footer p {
 }
 .fall {
     position: absolute;
+    z-index: 0;
     left: 0;
     bottom: 0;
     width: 100px;
@@ -603,11 +614,11 @@ footer p {
 }
 .fly {
     position: absolute;
+    z-index: 1;
     left: 0;
     bottom: 0;
     width: 100px;
     height: 90px;
-    display: none;
 }
 .top-btn {
     position: absolute;
@@ -615,4 +626,11 @@ footer p {
     right: 0;
     width: 90px;
     height: 80px;
+}
+.opacity-off{
+    opacity: 0;
+}
+
+.click-off{
+    opacity: 0;
 }
