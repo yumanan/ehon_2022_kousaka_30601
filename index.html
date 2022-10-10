@@ -11,11 +11,20 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css"type="text/css" media="(max-width: 520px)" />
+
+        <!-- slick用css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" type="text/css" />
+
+        <!-- remodal用css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" rel="stylesheet" type="text/css" media="all"/>
+
     </head>
     <body>
         <!-- 全体背景 -->
         <div class="all-cover">
-            <img src="./img/all_bg.jpg" alt="全体背景">
+            <img src="./img/全体背景 4.png" alt="全体背景">
         </div>
 
         <nav class="nav">
@@ -135,73 +144,54 @@
                     <h2 class="sec-tit">
                         キャラクター紹介
                     </h2>
-                    <div class="cha-01">
-                        <div class="picture">
-                            <a class="left" href="#left1"> </a>
-                            <img src="./img/Introduce-ryu.png" alt="">
-                            <a class="right" href="#right1"> </a>
+                    <div class="regular">
+                        <div class="cha-01">
+                            <div class="picture">
+                                <img src="./img/Introduce-ryu.png" alt="">
+                            </div>
+                            <div class="cha-txt txt-wrapper">
+                                <h3>
+                                    りゅー
+                                </h3>
+                                <p>
+                                    この物語の主人公。恥ずかしがりやでおはなしするのがにがて。
+                                    <br>
+                                    でも、本当はたくさんおはなししたいと思っている
+                                </p>
+                            </div> 
                         </div>
-                        <div class="cha-txt txt-wrapper">
-                            <h3>
-                                りゅー
-                            </h3>
-                            <p>
-                                この物語の主人公。恥ずかしがりやでおはなしするのがにがて。
-                                <br>
-                                でも、本当はたくさんおはなししたいと思っている
-                            </p>
-                        </div> 
-                        <div class="page">
-                            <a class="black" href="#button1"></a>
-                            <a href="#button2"></a>
-                            <a href="#button3"></a>
-                        </div>
-                    </div>
 
-                    <div class="cha-02 cha-none">
-                        <div class="picture">
-                            <a class="left" href="#left2"> </a>
-                            <img src="./img/Introduce-dorodoro.png" alt="">
-                            <a class="right" href="#right2"> </a>
+                        <div class="cha-02 ">
+                            <div class="picture">
+                                <img src="./img/Introduce-dorodoro.png" alt="">
+                            </div>
+                            <div class="cha-txt txt-wrapper">
+                                <h3>
+                                    ドロドロさん
+                                </h3>
+                                <p>
+                                    りゅーが偶然出会ったさみしそうなひと。
+                                    <br>
+                                    ドロドロに汚れているが…。
+                                </p>
+                            </div> 
                         </div>
-                        <div class="cha-txt txt-wrapper">
-                            <h3>
-                                ドロドロさん
-                            </h3>
-                            <p>
-                                りゅーが偶然出会ったさみしそうなひと。
-                                <br>
-                                ドロドロに汚れているが…。
-                            </p>
-                        </div> 
-                        <div class="page">
-                            <a href="#button1"></a>
-                            <a class="black" href="#button2"></a>
-                            <a href="#button3"></a>
+    
+                        <div class="cha-03">
+                            <div class="picture">
+                                <img src="./img/Introduce-mob.png" alt="">
+                            </div>
+                            <div class="cha-txt txt-wrapper">
+                                <h3>
+                                    その他
+                                </h3>
+                                <p>
+                                    りゅーが住むきょうりゅう町の住人達。
+                                    <br>
+                                    りゅーを温かく見守っている。
+                                </p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="cha-03 cha-none">
-                        <div class="picture">
-                            <a class="left" href="#left3"> </a>
-                            <img src="./img/yellow.jpg" alt="">
-                            <a class="right" href="#right3"> </a>
-                        </div>
-                        <div class="cha-txt txt-wrapper">
-                            <h3>
-                                その他
-                            </h3>
-                            <p>
-                                りゅーが住むきょうりゅう町の住人達。
-                                <br>
-                                りゅーを温かく見守っている。
-                            </p>
-                        </div>
-                        <div class="page">
-                            <a href="#button1"></a>
-                            <a href="#button2"></a>
-                            <a class="black" href="#button3"></a>
-                        </div> 
                     </div>
                 </div>
             </div>
@@ -218,11 +208,28 @@
                     <h2 class="sec-tit">
                         ためしよみ
                     </h2>
-                    <img src="./img/grey.jpg" alt="表紙">
+                    <a href="#openModal">
+                        <img src="/img/Readtrial/0.png" alt="表紙">
+                    </a>
 
                     <!-- 試し読みボタン -->
-                    <div class="try-btn">    
-                        <h3>ここをクリック</h3>
+                    <a href="#openModal" class="btn">
+                        <div class="try-btn">    
+                            <h3>ここをクリック</h3>
+                        </div>
+                    </a>
+                    <!-- remodal -->
+                    <!-- data-remodal-options="closeOnOutsideClick: false" -->
+                    <div class="remodal" data-remodal-id="openModal" 
+                    
+                    style="max-width: 70%;">
+                        <div class="regular_tamesiyomi">
+                            <div><img src="/img/Readtrial/0.png" alt="1"></div>
+                            <div><img src="/img/Readtrial/1.png" alt="2"></div>
+                            <div><img src="/img/Readtrial/2.png" alt="3"></div>
+                            <div><img src="/img/Readtrial/3.png" alt="4"></div>
+                        </div>
+                        <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
                     </div>
                 </div>
             </div>
@@ -239,55 +246,27 @@
                             ご感想などご自由にお書きください。投稿して頂いたコメントは順番に表示されます。ご了承のほどよろしくお願いします。
                         </p>
     
-                        <div class="every">
-                            <div class="com-txt-right white">
-                                <h3>
-                                    にぎりずしさん（仮名）
-                                </h3>
-                                <p class="hide-01">
-                                    何か一歩踏み出したい時に読み返したい本になりました。誰が読んでも勉強になる大事なことを再認識させてくれます。
-                                </p>
-                                <div class="wh-01"></div>
-                            </div>
-                            
-                            <div class="com-txt-left">
-                                <h3>
-                                    ぽんさん（仮名）
-                                </h3>
-                                <p class="hide-02">
-                                    日常では勇気について考えたりする機会はあまりありませんが、この本を読んで勇気は人を成長させてくれる大切な感情だと思い出させてくれました。
-                                </p>
-                                <div class="wh-02"></div>
-                            </div>
-        
-                            <div class="com-txt-right">
-                                <h3>
-                                    どらやきさん（仮名）
-                                </h3>
-                                <p class="hide-03">
-                                    勇気は誰の中にもあり、時に大きな変化を与えてくれるものだと改めて考えさせられました。いろん勇気の形があり様々な場面があると思いますが、もし自分に勇気が必要になったらこの本の力を借りたいと思います。
-                                </p>
-                                <div class="wh-03"></div>
-                            </div>
+                        <div id="result" class="every">
+                            <h3></h3>
+                            <p></p>
                         </div>
                     </div>  
-
                     <!-- 送信form -->
                     <div class="contact">
                         <h2>
                             コメントする
                         </h2>
                         <div class="contact-form">
-                            <form action="#">
+                            <form id="coment-form" action="#">
                                 <dl>
                                     <dt class="label"><label for="message">コメントの内容</label></dt>
-                                    <dd><textarea style="border:none" name="your-message" class="message"></textarea></dd>
+                                    <dd><input style="border:none" name="your-message" class="message textarea"></input></dd>
 
                                     <dt class="label"><label for="name">おなまえ</label></dt>
                                     <dd><input type="text" class="name" name="your-name"></dd>
                                 </dl>
 
-                                <div class="send-btn">
+                                <div id="send-csv-btn" class="send-btn">
                                     <p>送信</p>
                                 </div>
                             </form>
@@ -311,13 +290,13 @@
                             まちがいさがし
                         </h2>
                         <p class="explain">
-                            上と下のイラストからちがうところを　　つさがそう！
+                            上と下のイラストからちがうところを　　さがそう！
                         </p>
                     </div>
                    
-                    <img src="./img/grey.jpg" alt="">
-
-                    <img src="./img/grey.jpg" alt="">
+                    <img src="./img/Find_the_difference/間違い元絵.png" alt="元絵">
+                    
+                    <img src="./img/Find_the_difference/間違い間違い絵.png" alt="間違い絵">
                 </div>
             </div>
         </section>
@@ -346,7 +325,7 @@
 
         <footer>
             <div class="foot-img">
-                <img class="l-img" src="./img/grey.jpg" alt="">
+                <img class="l-img" src="./img/ふった 2.png" alt="">
                 <img class="r-img" src="./img/yellow.jpg" alt="">
             </div>
 
@@ -355,21 +334,41 @@
             <!-- トップボタン -->
             <div class="to-top">
                 <a class="fall" href="#to-top">
-                    <img src="./img/grey.jpg" alt="落ちるりゅー(初期)">
+                    <img src="./img/落ちてるりゅー 01 アートボード 1.svg" alt="落ちるりゅー(初期)">
                 </a>
 
                 <a class="fly click-off" href="#to-top">
-                    <img src="./img/red.jpg" alt="">
+                    <img src="./img/飛ぶリュ 01 アートボード 1.svg" alt="">
                 </a>
 
                 <!-- <a class="top-btn" href="#">
                     <img src="./img/grey.jpg" alt="">
                 </a> -->
             </div>
+            <div class="to-top_mid">
+                <a class="fall" href="#to-top">
+                    <img src="./img/落ちてるりゅー 01 アートボード 1.svg" alt="落ちるりゅー(初期)">
+                </a>
+                <a class="fly click-off" href="#to-top">
+                    <img src="./img/飛ぶリュ 01 アートボード 1.svg" alt="">
+                </a>
+            </div>
         </footer>
 
-
+        
+        <!-- script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
+        <!-- slick -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <!-- remodal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+
+        <!-- csv -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+
+        
         <script src="script.js"></script>
     </body>
 </html>

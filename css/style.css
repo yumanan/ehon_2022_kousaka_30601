@@ -173,7 +173,7 @@ body {
 .view {
     height: auto;
     width: 100%;
-    background-image: url("../img/grey.jpg");
+    background-image: url("../img/概要01アートボード1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -196,7 +196,7 @@ body {
 .story {
     height: 420px;
     width: 100%;
-    background-image: url(../img/grey.jpg);
+    background-image: url("../img/あらすじ01アートボード1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -235,14 +235,14 @@ body {
 .introduce {
     height: 965px;
     width: 100%;
-    background-image: url("../img/grey.jpg");
+    background-image: url("../img/キャラ01アートボード1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
     margin: 0 0 80px 0 ;
 }
 .introduce h2 {
-    padding: 0 0 88px 0;
+    padding: 0;
 }
 
 .picture {
@@ -266,6 +266,8 @@ body {
     background-color: #D8D2D2;
     border-radius: 50%;
     position: relative;
+    top: 14em;
+    z-index: 999;
 }
 .left::after {
     content: "";
@@ -286,6 +288,9 @@ body {
     background-color: #D8D2D2;
     border-radius: 50%;
     position: relative;
+    bottom: 26.2em;
+    left: 41em;
+    z-index: 999;
 }
 .right::after {
     content: "";
@@ -328,10 +333,6 @@ body {
     margin: auto;
 }
 
-.cha-none {
-    display: none;
-}
-
 /* ページ切り替え */
 .page {
     display: flex;
@@ -353,7 +354,7 @@ body {
 .try {
     height: 955px;
     width: 100%;
-    background-image: url("../img/grey.jpg");
+    background-image: url("../img/ためし01アートボード1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -384,7 +385,7 @@ body {
 .comment {
     height: auto;
     width: 100%;
-    background-image: url("../img/grey.jpg");
+    background-image: url("../img/コメント01アートボード1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -473,6 +474,8 @@ body {
     border: 1px solid #fff;
     background-color: #fff;
 }
+
+/* 必要ない？ */
 .hide-03 {
     position: relative;
 }
@@ -495,10 +498,9 @@ body {
 .label {
     margin: 0 0 30px 0;
 }
-textarea,input:focus {
+input:focus {
     outline: none;
 }
-textarea,
 input {
     border-style: none;
     border-radius: 20px;
@@ -506,7 +508,8 @@ input {
     width: 100%;
     padding: 20px;
 }
-textarea {
+/* class化 */
+.textarea {
     margin: 0 0 50px 0;
     height: 370px;
 }
@@ -537,7 +540,7 @@ textarea {
 .enjoy {
     height: 1365px;
     width: 100%;
-    background-image: url("../img/grey.jpg");
+    background-image: url("../img/まちがい01アートボード1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -552,7 +555,7 @@ textarea {
 .wall {
     height: auto;
     width: 100%;
-    background-image: url("../img/grey.jpg");
+    background-image: url("../img/ためし01アートボード1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -583,6 +586,8 @@ footer {
     display: flex;
     height: 800px;
     width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 .l-img {
     width: 80%;
@@ -634,3 +639,29 @@ footer p {
 .click-off{
     opacity: 0;
 }
+
+.to-top_mid {
+    display: none;
+    width: 150px;
+    height: 200px;
+    position: fixed;
+    right: 23%;
+    bottom: 30%;
+    z-index: 11;
+}
+/* .fall_mid{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 90px;
+} */
+/* .fly {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 90px;
+} */
