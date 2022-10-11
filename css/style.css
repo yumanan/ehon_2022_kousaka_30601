@@ -14,22 +14,14 @@ img {
 body {
     font-family: 'Kiwi Maru', serif;
     color: #707070;
+    width: 100%;
+    background-image: url("../img/014_background4.png") ;
 }
 
 /* インナー幅 */
 .inline-wrapper {
     width: 965px;
     margin: 0 auto;
-}
-
-/* 全体背景 */
-.all-cover {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    z-index: -20;
-    background-size: cover;
 }
 
 /* 雲の枠・共通項 */
@@ -123,13 +115,13 @@ body {
     transition: all 0.5s;
 }
 .y-01-active{
-    background-image: url(../img/bar_big.png) ;
+    background-image: url(../img/015_bar_big.png) ;
 }
 .y-02-active {
-    background-image: url(../img/bar_small.png);
+    background-image: url(../img/016_bar_small.png);
 }
 .blue-active {
-    background-image: url(../img/bar_blue.png);
+    background-image: url(../img/017_bar_blue.png);
 }
 
 .sns {
@@ -164,16 +156,12 @@ body {
     margin: 0 0 230px 0;
     text-align: center;
 }
-.main img {
-    width: 60%;
-    height: 100%;
-}
 
 /* 概要 */
 .view {
     height: auto;
     width: 100%;
-    background-image: url("../img/概要01アートボード1.svg");
+    background-image: url("../img/018_art1.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -196,7 +184,7 @@ body {
 .story {
     height: 420px;
     width: 100%;
-    background-image: url("../img/あらすじ01アートボード1.svg");
+    background-image: url("../img/019_story.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -206,36 +194,11 @@ body {
     line-height: 30px;
 }
 
-/* 雲の移動 */
-.cloud-01 {
-    text-align: right;
-    margin: 0 0 80px 0 ;
-}
-.cloud-01 img {
-    width: 35%;
-    height: auto;
-}
-.cloud-02 {
-    margin: 0 0 80px 0 ;
-}
-.cloud-02 img {
-    width: 35%;
-    height: auto;
-}
-.cloud-03 {
-    text-align: right;
-    margin: 0 0 80px 0 ;
-}
-.cloud-03 img {
-    width: 35%;
-    height: auto;
-}
-
 /* キャラ紹介 */
 .introduce {
     height: 965px;
     width: 100%;
-    background-image: url("../img/キャラ01アートボード1.svg");
+    background-image: url("../img/020_introduce.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -354,7 +317,7 @@ body {
 .try {
     height: 955px;
     width: 100%;
-    background-image: url("../img/ためし01アートボード1.svg");
+    background-image: url("../img/021_try.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -385,7 +348,7 @@ body {
 .comment {
     height: auto;
     width: 100%;
-    background-image: url("../img/コメント01アートボード1.svg");
+    background-image: url("../img/022_comment.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -508,10 +471,11 @@ input {
     width: 100%;
     padding: 20px;
 }
-/* class化 */
-.textarea {
+textarea {
     margin: 0 0 50px 0;
+    width: 100%;
     height: 370px;
+    background-color: #E4F7F7;
 }
 .name {
     height: 90px;
@@ -522,7 +486,7 @@ input {
 }
 .send-btn {
     margin: 0 auto;
-    width: 300px;
+    width: 147px;
     height: 90px;
     line-height: 90px;
     border-style: none;
@@ -540,7 +504,7 @@ input {
 .enjoy {
     height: 1365px;
     width: 100%;
-    background-image: url("../img/まちがい01アートボード1.svg");
+    background-image: url("../img/023_enjoy.svg");
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -555,7 +519,8 @@ input {
 .wall {
     height: auto;
     width: 100%;
-    background-image: url("../img/ためし01アートボード1.svg");
+    background-image: url("../img/021_try.svg");
+    /* 024? */
     background-size: cover;
     background-repeat: no-repeat;   
     padding: 80px 100px;
@@ -579,15 +544,13 @@ input {
 }
 
 /* フッター */
-footer {
+.copyright{
     background-color: #fff;
 }
 .foot-img {
     display: flex;
-    height: 800px;
+    height: 600px;
     width: 100%;
-    position: absolute;
-    z-index: 10;
 }
 .l-img {
     width: 80%;
@@ -645,23 +608,7 @@ footer p {
     width: 150px;
     height: 200px;
     position: fixed;
-    right: 23%;
-    bottom: 30%;
-    z-index: 11;
+    right: 50px;
+    bottom: 484px;;
+    z-index: 3;
 }
-/* .fall_mid{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    width: 100px;
-    height: 90px;
-} */
-/* .fly {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    width: 100px;
-    height: 90px;
-} */

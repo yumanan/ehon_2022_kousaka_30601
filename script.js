@@ -69,6 +69,7 @@ $(function(){
     $('a[href^="#to-top"]').click(function() {
       $('a.fly').removeClass('click-off');
       $('a.fall').addClass('click-off');
+      $('a.top-btn').addClass('click-off');
       return false; 
     });
     // topが上に行くとflyが消えて、fallが表示される
@@ -76,6 +77,7 @@ $(function(){
       if ($(window).scrollTop() < 30) {
         $('a.fly').addClass('click-off');
         $('a.fall').removeClass('click-off');
+        $('a.top-btn').removeClass('click-off');
       }
     });
 
@@ -88,12 +90,17 @@ $(function(){
 
       //スクロール量を取得
       var scroll_p = $(document).scrollTop();
-      var scroll = scroll_p + window_ht;
-      if(scroll_y > scroll-350){
+      var scroll = scroll_p + window_ht + 500;
+      if(scroll_y > scroll){
         $('.to-top_mid').fadeOut(100);
+        $('.to-top').fadeIn();
+        console.log("scroll_y",scroll_y);
+        console.log("scroll",scroll);
       }
       else if(scroll_y < scroll){
         $('.to-top_mid').fadeIn();
+        $('.to-top').fadeOut();
+
       }
     });
 
@@ -118,51 +125,5 @@ $(function(){
     $(".regular_tamesiyomi").slick({
       dots: true,
     });
-
-
-    $('#send-csv-btn').click(function() {
-      var val = $('#coment-form [name=your-message]').val();
-      var val2 = $('#coment-form [name=your-name]').val();
-    });
-
-    // csv反映
-    function parseCsv(data) {
-      // CSVを配列で読み込む
-      var csv = $.csv.toArrays(data);
-  
-      var insert = '';
-      $(csv).each(function(i) {
-        if (this.length > 0) {
-          if( i % 2 == 0 ){
-            insert += '<div class="com-txt-right white">';
-            $(this).each(function(i) {
-              if(i === 0){
-                insert += '<h3>' + this + '</h3>';
-              }else{
-                insert += '<p class="hide-01">' + this + '</p>';
-              }
-            });
-            insert += '<div class="wh-01"></div>';
-            insert += '</div>';
-          }else{
-            insert += '<div class="com-txt-left">';
-            $(this).each(function(i) {
-              if(i === 0){
-                insert += '<h3>' + this + '</h3>';
-              }else{
-                insert += '<p class="hide-02">' + this + '</p>';
-              }
-            });
-            insert += '<div class="wh-02"></div>';
-            insert += '</div>';
-          }
-        }
-        $("#result ").append(insert);
-        insert = "";
-      });
-    }
-    // CSVの読み込み
-    $.get('/coment.csv', parseCsv, 'text');
-  
 
 });
